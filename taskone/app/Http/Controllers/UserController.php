@@ -43,7 +43,7 @@ class UserController extends Controller
         
         $user->save();
         
-        return redirect()->route('adminindex')->with('success', 'User was created  successfully');
+        return redirect()->route('admin.index')->with('success', 'User was created  successfully');
     }
 
     public function edit($id){
@@ -81,7 +81,7 @@ class UserController extends Controller
 
         $user->save();
 
-        return redirect()->route('adminindex')->with('success', 'User was updated successfully');
+        return redirect()->route('admin.index')->with('success', 'User was updated successfully');
     }
 
 
@@ -91,6 +91,6 @@ class UserController extends Controller
 
         $user->delete();
 
-        return redirect()->route('adminindex')->with('success', 'User was deleted successfully');
+        return redirect()->route('admin.index')->with('success', 'User was deleted successfully');
     }
 }

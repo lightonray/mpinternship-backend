@@ -3,12 +3,11 @@
 @section('title', 'Users - Dashboard')
 
 @section('content_header')
-    <h1>User Management</h1>
+    <h1>User Management Dashboard</h1>
 @stop
 
 @section('content')
 <div class="container">
-    <h2>User Table</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -25,8 +24,8 @@
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->phone_number }}</td>
                 <td>
-                    <a href="{{ route('adminedit', ['id' => $user->id]) }}" class="btn btn-primary">Edit</a>
-                    <a href="{{ route('admindestroy', ['id' => $user->id]) }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
+                    <a href="{{ route('admin.user.edit', ['id' => $user->id]) }}" class="btn btn-primary">Edit</a>
+                    <a href="{{ route('admin.user.destroy', ['id' => $user->id]) }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
 
                 </td>
             </tr>

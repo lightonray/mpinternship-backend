@@ -1,14 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Users - Dashboard')
+@section('title', 'Users - Edit')
 
 @section('content_header')
-    <h1>User Management</h1>
+    <h1>Edit User</h1>
 @stop
 
 @section('content')
 <div class="container">
-    <h2>Create User</h2>
     <form method="POST">
         @csrf
         <div class="form-group">
