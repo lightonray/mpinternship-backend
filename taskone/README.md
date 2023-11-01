@@ -1,4 +1,7 @@
-User-Friendly Application and Car Model API
+User-Friendly Application and API
+
+Title: User and Car Management
+
 This repository houses a user-friendly application coupled with a comprehensive API for user registration, login, and car model management. Users can seamlessly register, log in, create car models, update, edit, or delete cars, and manage their own user accounts through an intuitive interface. The API is designed to be tested using Postman while the application provides a user-friendly frontend for these features.
 
 Application Features
