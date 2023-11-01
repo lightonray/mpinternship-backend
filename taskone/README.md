@@ -45,4 +45,6 @@ Testing with Postman
 To test the API using Postman, follow the instructions provided in the API section of this README. For the user-friendly application, explore the features through the intuitive interface.
 
 Note
-This repository offers both a user-friendly application and a robust API, making it versatile for various use cases. Ensure proper security measures when deploying the application in a production environment.
+Make sure to include the authentication token (received upon login) in the headers of requests that require authentication. You can set the Authorization header with the token as Bearer YOUR_TOKEN.
+
+This API is designed for educational and testing purposes. Please use it responsibly and ensure proper security measures are in place when deploying it in a production environment.
